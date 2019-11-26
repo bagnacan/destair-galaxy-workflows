@@ -1,19 +1,4 @@
-Workflows
-=========
-# Requierements
-```
-export GALAXY_ROOT=/path/to/galaxy
-git clone https://github.com/galaxyproject/galaxy.git $GALAXY_ROOT
-cd $GALAXY_ROOT
-git checkout v17.05
-```
-Add also
- * https://github.com/destairdenbi/guided_tours
+# Workflows
 
-# Installation
-Import into Galaxy as administrator via interface
-    
-# Run
-```
-$GALAXY_ROOT/run.sh
-```
+This repository contains the de.STAIR workflows that are incorporated in the
+[Galaxy workflow generator](https://github.com/destairdenbi/galaxy-workflow-generator).
