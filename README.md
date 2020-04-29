@@ -50,10 +50,10 @@ analyses.
 
 
 
-### DGE analysis (paired-end reads)](#dge-analysis-paired-end-reads)
+### DGE analysis (paired-end reads)
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
 
-### [RRBS/BS-Seq analysis (paired-end reads)](#rrbsbs-seq-analysis-paired-end-reads)
+### [RRBS/BS-Seq analysis (paired-end reads)
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
