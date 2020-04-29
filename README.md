@@ -55,5 +55,5 @@ analyses.
 
 
 
-### [RRBS/BS-Seq analysis (paired-end reads)
+### RRBS/BS-Seq analysis (paired-end reads)
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
