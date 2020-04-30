@@ -59,6 +59,8 @@ analyses.
 - [FastQC + Cutadapt + STAR + AWK + Infer Experiment + HTSeq-count + DESeq2.ga](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/pe/fastqc__cutadapt__star__awk__infer_experiment__htseq-count__deseq2.ga)
 - [FastQC + PRINSEQ --> HISAT2 --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/pe/fastqc__prinseq__hisat2__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC + PRINSEQ --> HISAT2 --> AWK + Infer Experiment + HTSeq-count + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/pe/fastqc__prinseq__hisat2__awk__infer_experiment__htseq-count__deseq2.ga)
+- [FastQC + PRINSEQ --> STAR --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/pe/fastqc__prinseq__star__awk__infer_experiment__featurecounts__deseq2.ga)
+- [FastQC + PRINSEQ --> STAR --> AWK + Infer Experiment + HTSeq-count + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/pe/fastqc__prinseq__star__awk__infer_experiment__htseq-count__deseq2.ga)
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
