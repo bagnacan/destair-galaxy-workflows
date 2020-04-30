@@ -37,11 +37,11 @@ analyses.
 ### DGE analysis (single-end reads)
 - [FastQC + Trim Galore! --> BWA --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__bwa__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC + Trim Galore! --> BWA --> AWK + Infer Experiment + HTSeq-count + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__bwa__awk__infer_experiment__htseq-count__deseq2.ga)
+- [FastQC + Trim Galore! --> HISAT2 --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__hisat2__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC + Trim Galore! --> segemehl --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__segemehl__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC + Trim Galore! --> segemehl --> AWK + Infer Experiment + HTSeq-count + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__segemehl__awk__infer_experiment__htseq-count__deseq2.ga)
 - [FastQC + Trimmomatic --> BWA --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trimmomatic__bwa__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC + Trimmomatic --> BWA --> AWK + Infer Experiment + HTSeq-count + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trimmomatic__bwa__awk__infer_experiment__htseq-count__deseq2.ga)
-- [FastQC + Trim Galore! --> HISAT2 --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__hisat2__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC + Trimmomatic --> HISAT2 --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trimmomatic__hisat2__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC + Trimmomatic --> HISAT2 --> AWK + Infer Experiment + HTSeq-count + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trimmomatic__hisat2__awk__infer_experiment__htseq-count__deseq2.ga)
 - [FastQC + Trimmomatic --> STAR --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trimmomatic__star__awk__infer_experiment__featurecounts__deseq2.ga)
@@ -51,6 +51,8 @@ analyses.
 
 
 ### DGE analysis (paired-end reads)
+- [FastQC + PRINSEQ --> HISAT2 --> AWK + Infer Experiment + featureCounts + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/pe/fastqc__prinseq__hisat2__awk__infer_experiment__featurecounts__deseq2.ga)
+- [FastQC + PRINSEQ --> HISAT2 --> AWK + Infer Experiment + HTSeq-count + DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/pe/fastqc__prinseq__hisat2__awk__infer_experiment__htseq-count__deseq2.ga)
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
