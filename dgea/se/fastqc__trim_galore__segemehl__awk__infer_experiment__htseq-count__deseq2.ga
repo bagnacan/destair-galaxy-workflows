@@ -1,1 +1,1833 @@
-{"uuid": "62a6cbce-6b60-45ac-9333-546ee03022d9", "tags": [], "format-version": "0.1", "name": "trim-galore_segemehl_awk_infer-experiment_htseq-count_deseq2", "version": 0, "steps": {"0": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz\"}", "id": 0, "uuid": "d415a204-767f-4e2b-ad3f-13fc0bcba766", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz", "description": ""}], "position": {"top": 10, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "1": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz\"}", "id": 1, "uuid": "02d8964d-d646-4b6d-96a1-8033094c27e2", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz", "description": ""}], "position": {"top": 130, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "2": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz\"}", "id": 2, "uuid": "40d9a822-b484-4735-881e-b10bfd9c156a", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz", "description": ""}], "position": {"top": 250, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "3": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz\"}", "id": 3, "uuid": "dda2a431-4b63-472a-9794-d91e10a5cfaf", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz", "description": ""}], "position": {"top": 370, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "4": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz\"}", "id": 4, "uuid": "17b05d65-8e3e-44f0-8f98-0002a4409c65", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz", "description": ""}], "position": {"top": 490, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "5": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz\"}", "id": 5, "uuid": "5e77dca8-c0bf-4e99-ac07-ac082414db5f", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz", "description": ""}], "position": {"top": 610, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "6": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz\"}", "id": 6, "uuid": "9ed9411b-cda9-4623-8c69-1ad6f2121b96", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz", "description": ""}], "position": {"top": 730, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "7": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz\"}", "id": 7, "uuid": "02522d49-ae05-4860-91b7-59a74d0e5a76", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz", "description": ""}], "position": {"top": 850, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "8": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa\"}", "id": 8, "uuid": "f7d4309d-c3bb-4de9-91ba-05e138718fb8", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa", "description": ""}], "position": {"top": 970, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "9": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf\"}", "id": 9, "uuid": "41ccc026-8422-4904-9a4d-af8d5ba111e2", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf", "description": ""}], "position": {"top": 1090, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "10": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 0}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 10, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "0922df5f-d216-4ceb-8f33-3fa78ea2031f", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "11": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 0}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 11, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "783b4312-c051-49ff-a9f0-2c5d6512ef9c", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 970, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "12": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 1}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 12, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "aa41e0dc-e3a0-4bb9-adab-fba554e4dd13", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 130, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "13": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 1}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 13, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "3b2773f2-502a-4a0a-a565-2988fc245c28", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1090, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "14": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 2}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 14, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "d92753c7-f0d7-4974-9aa1-447bca31add5", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 250, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "15": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 2}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 15, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "1240bf12-58f0-4644-89df-b25c3edf4a48", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1210, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "16": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 3}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 16, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "cc0517dd-544d-46da-bdd1-7de29763fbd6", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 370, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "17": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 3}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 17, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "ae06af9c-fefe-4798-ad98-282513a98e1b", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1330, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "18": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 4}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 18, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "467c5dda-e880-40d2-b65d-aa205df62c8d", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 490, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "19": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 4}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 19, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "8d296802-3213-4b3b-a7b5-df0d00f7b28c", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1450, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "20": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 5}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 20, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "70e1d4d2-11ac-4793-ab73-466301cb917c", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 610, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "21": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 5}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 21, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "62e836bd-e93e-4209-8e6e-21384a47eeb8", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1570, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "22": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 6}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 22, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "f1ab6d5c-b4a6-4c60-a409-33e480145eab", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 730, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "23": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 6}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 23, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "5229f4ce-06b7-477c-b056-85abbc7e2ce4", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1690, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "24": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 7}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 24, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "539dd2c3-d79e-4477-af0b-d489e9e65522", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 850, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "25": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "tool_version": "0.6.3", "outputs": [{"type": "input", "name": "trimmed_reads_single"}, {"type": "txt", "name": "report_file"}], "workflow_outputs": [], "input_connections": {"singlePaired|input_singles": {"output_name": "output", "id": 7}}, "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}", "id": 25, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "084bbd8ba7b8", "name": "trim_galore", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "5d34be24-7f58-4f15-a222-8621d7272fdf", "errors": null, "name": "Trim Galore!", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1810, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3", "type": "tool"}, "26": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1", "tool_version": "1.1.1", "outputs": [{"type": "input", "name": "outfile"}], "workflow_outputs": [], "input_connections": {"infile": {"output_name": "output", "id": 9}}, "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"code\": \"\\\"!/^#/ && $3==\\\\\\\"exon\\\\\\\"{if($7==\\\\\\\"+\\\\\\\"){ p[px++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 }else{ n[nx++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 } if(nx>1000 && px>1000){ exit } } END{ for(i in p){ print p[i] } for(i in n){ print n[i] } }\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"infile\": \"null\"}", "id": 26, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "0a8c6b61f0f4", "name": "text_processing", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "25717f5c-b966-483b-862d-a9b8560f1e83", "errors": null, "name": "Text reformatting", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1930, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1", "type": "tool"}, "27": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 11}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 27, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "14cdc77f-bc53-4e65-aa43-5b2c2a70b30b", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "28": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 13}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 28, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "b1d35416-1581-4393-b178-92815de18af6", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 130, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "29": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 15}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 29, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "f014f34b-2509-4565-8ce3-05717e0fcf38", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 250, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "30": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 17}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 30, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "75d33436-7114-4051-905f-921f30bc77be", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 370, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "31": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 19}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 31, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "9686a6f6-39ed-405e-95bf-3962312929e1", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 490, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "32": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 21}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 32, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "adac289a-f5e0-4fb7-94d4-2df6321c0c82", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 610, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "33": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 23}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 33, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "d56729a8-1443-4b06-8f2b-73723d7251d9", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 730, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "34": {"tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "tool_version": "0.2.0.4", "outputs": [{"type": "sam", "name": "segemehl_out"}, {"type": "fastq", "name": "segemehl_outunmatched"}], "workflow_outputs": [], "input_connections": {"library|input_query": {"output_name": "trimmed_reads_single", "id": 25}, "refGenomeSource|own_reference_genome": {"output_name": "output", "id": 8}}, "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}", "id": 34, "tool_shed_repository": {"owner": "rnateam", "changeset_revision": "9c0d4ec99ba9", "name": "segemehl", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "16e3f546-3e52-40d6-833a-89dd612f4e3c", "errors": null, "name": "segemehl", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 850, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4", "type": "tool"}, "35": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 27}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 35, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "303634df-0a93-4aa7-8814-c83f853f2d9f", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 130, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "36": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 28}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 36, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "c09a193a-0f13-4c19-aace-9d655aa970aa", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 250, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "37": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 29}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 37, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "0900c816-25d8-4780-adfa-c1fcffa13a71", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 370, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "38": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 30}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 38, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "bf030902-d058-4e6e-bae0-559d560348cc", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 490, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "39": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 31}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 39, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "55b1ab23-55e5-420b-a149-a4266a92a55c", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 610, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "40": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 32}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 40, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "eb91dc87-6d2c-4461-ac1e-e0401de25293", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 730, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "41": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 33}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 41, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "ba8d5fbc-81e8-4f81-8289-c501598ef9dc", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 850, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "42": {"tool_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1", "tool_version": "2.6.4.1", "outputs": [{"type": "txt", "name": "output"}], "workflow_outputs": [], "input_connections": {"input": {"output_name": "segemehl_out", "id": 34}, "refgene": {"output_name": "outfile", "id": 26}}, "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"refgene\": \"null\", \"sample_size\": \"\\\"200000\\\"\", \"mapq\": \"\\\"0\\\"\", \"input\": \"null\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 42, "tool_shed_repository": {"owner": "nilesh", "changeset_revision": "1a052c827e88", "name": "rseqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "13bfe763-b667-4935-8883-35e203b6a48f", "errors": null, "name": "Infer Experiment", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1", "type": "tool"}, "43": {"tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "tool_version": "0.9.1", "outputs": [{"type": "tabular", "name": "counts"}, {"type": "tabular", "name": "othercounts"}], "workflow_outputs": [], "input_connections": {"samfile": {"output_name": "segemehl_out", "id": 34}, "gfffile": {"output_name": "output", "id": 9}}, "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 43, "tool_shed_repository": {"owner": "lparsons", "changeset_revision": "67b0b160903a", "name": "htseq_count", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "f0d94ae7-0039-44f6-acf2-97149bf83694", "errors": null, "name": "htseq-count", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 970, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1", "type": "tool"}, "44": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6", "tool_version": "2.11.40.6", "outputs": [{"type": "tabular", "name": "deseq_out"}, {"type": "pdf", "name": "plots"}], "workflow_outputs": [], "input_connections": {"select_data|rep_factorName_0|rep_factorLevel_1|countsFile": [{"output_name": "counts", "id": 43}, {"output_name": "counts", "id": 41}, {"output_name": "counts", "id": 40}, {"output_name": "counts", "id": 39}], "select_data|rep_factorName_0|rep_factorLevel_0|countsFile": [{"output_name": "counts", "id": 38}, {"output_name": "counts", "id": 37}, {"output_name": "counts", "id": 36}, {"output_name": "counts", "id": 35}]}, "tool_state": "{\"fit_type\": \"\\\"1\\\"\", \"__page__\": null, \"normVST\": \"\\\"false\\\"\", \"tximport\": \"{\\\"__current_case__\\\": 1, \\\"tximport_selector\\\": \\\"count\\\"}\", \"esf\": \"\\\"\\\"\", \"outlier_replace_off\": \"\\\"false\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"auto_mean_filter_off\": \"\\\"false\\\"\", \"header\": \"\\\"true\\\"\", \"normCounts\": \"\\\"false\\\"\", \"outlier_filter_off\": \"\\\"false\\\"\", \"many_contrasts\": \"\\\"false\\\"\", \"batch_factors\": \"null\", \"pdf\": \"\\\"true\\\"\", \"normRLog\": \"\\\"false\\\"\", \"select_data\": \"{\\\"__current_case__\\\": 1, \\\"how\\\": \\\"datasets_per_level\\\", \\\"rep_factorName\\\": [{\\\"__index__\\\": 0, \\\"factorName\\\": \\\"treatment\\\", \\\"rep_factorLevel\\\": [{\\\"__index__\\\": 0, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"control\\\"}, {\\\"__index__\\\": 1, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"treated\\\"}]}]}\"}", "id": 44, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "0696db066a5b", "name": "deseq2", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "bb064c9c-c373-41be-866a-170a3d4a5127", "errors": null, "name": "DESeq2", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 890}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6", "type": "tool"}}, "annotation": "", "a_galaxy_workflow": "true"}
+{
+    "uuid": "62a6cbce-6b60-45ac-9333-546ee03022d9",
+    "tags": [],
+    "format-version": "0.1",
+    "name": "trim-galore_segemehl_awk_infer-experiment_htseq-count_deseq2",
+    "version": 0,
+    "steps": {
+        "0": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz\"}",
+            "id": 0,
+            "uuid": "d415a204-767f-4e2b-ad3f-13fc0bcba766",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 10,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "1": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz\"}",
+            "id": 1,
+            "uuid": "02d8964d-d646-4b6d-96a1-8033094c27e2",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 130,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "2": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz\"}",
+            "id": 2,
+            "uuid": "40d9a822-b484-4735-881e-b10bfd9c156a",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 250,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "3": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz\"}",
+            "id": 3,
+            "uuid": "dda2a431-4b63-472a-9794-d91e10a5cfaf",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 370,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "4": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz\"}",
+            "id": 4,
+            "uuid": "17b05d65-8e3e-44f0-8f98-0002a4409c65",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 490,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "5": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz\"}",
+            "id": 5,
+            "uuid": "5e77dca8-c0bf-4e99-ac07-ac082414db5f",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 610,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "6": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz\"}",
+            "id": 6,
+            "uuid": "9ed9411b-cda9-4623-8c69-1ad6f2121b96",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 730,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "7": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz\"}",
+            "id": 7,
+            "uuid": "02522d49-ae05-4860-91b7-59a74d0e5a76",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 850,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "8": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa\"}",
+            "id": 8,
+            "uuid": "f7d4309d-c3bb-4de9-91ba-05e138718fb8",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 970,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "9": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf\"}",
+            "id": 9,
+            "uuid": "41ccc026-8422-4904-9a4d-af8d5ba111e2",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 1090,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "10": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 0
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 10,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "0922df5f-d216-4ceb-8f33-3fa78ea2031f",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "11": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 0
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 11,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "783b4312-c051-49ff-a9f0-2c5d6512ef9c",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 970,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "12": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 1
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 12,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "aa41e0dc-e3a0-4bb9-adab-fba554e4dd13",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 130,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "13": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 1
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 13,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "3b2773f2-502a-4a0a-a565-2988fc245c28",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1090,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "14": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 2
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 14,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "d92753c7-f0d7-4974-9aa1-447bca31add5",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 250,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "15": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 2
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 15,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "1240bf12-58f0-4644-89df-b25c3edf4a48",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1210,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "16": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 3
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 16,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "cc0517dd-544d-46da-bdd1-7de29763fbd6",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 370,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "17": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 3
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 17,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "ae06af9c-fefe-4798-ad98-282513a98e1b",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1330,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "18": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 4
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 18,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "467c5dda-e880-40d2-b65d-aa205df62c8d",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 490,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "19": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 4
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 19,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "8d296802-3213-4b3b-a7b5-df0d00f7b28c",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1450,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "20": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 5
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 20,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "70e1d4d2-11ac-4793-ab73-466301cb917c",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 610,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "21": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 5
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 21,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "62e836bd-e93e-4209-8e6e-21384a47eeb8",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1570,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "22": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 6
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 22,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "f1ab6d5c-b4a6-4c60-a409-33e480145eab",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 730,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "23": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 6
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 23,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "5229f4ce-06b7-477c-b056-85abbc7e2ce4",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1690,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "24": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 7
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 24,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "539dd2c3-d79e-4477-af0b-d489e9e65522",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 850,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "25": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "tool_version": "0.6.3",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "trimmed_reads_single"
+                },
+                {
+                    "type": "txt",
+                    "name": "report_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "singlePaired|input_singles": {
+                    "output_name": "output",
+                    "id": 7
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input_singles\\\": null, \\\"sPaired\\\": \\\"single\\\", \\\"three_prime_clip_R1\\\": \\\"\\\", \\\"trimming\\\": {\\\"__current_case__\\\": 0, \\\"trimming_select\\\": \\\"\\\"}}\", \"__rerun_remap_job_id__\": null, \"params\": \"{\\\"__current_case__\\\": 1, \\\"clip_R1\\\": \\\"\\\", \\\"clip_R2\\\": \\\"\\\", \\\"error_rate\\\": \\\"0.1\\\", \\\"min_length\\\": \\\"20\\\", \\\"quality\\\": \\\"20\\\", \\\"report\\\": \\\"true\\\", \\\"retain_unpaired\\\": {\\\"__current_case__\\\": 0, \\\"retain_unpaired_select\\\": \\\"no_output\\\"}, \\\"settingsType\\\": \\\"custom\\\", \\\"stringency\\\": \\\"3\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"rrbs\": \"{\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}\"}",
+            "id": 25,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "084bbd8ba7b8",
+                "name": "trim_galore",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "5d34be24-7f58-4f15-a222-8621d7272fdf",
+            "errors": null,
+            "name": "Trim Galore!",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1810,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/trim_galore/trim_galore/0.6.3",
+            "type": "tool"
+        },
+        "26": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1",
+            "tool_version": "1.1.1",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "outfile"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "infile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"code\": \"\\\"!/^#/ && $3==\\\\\\\"exon\\\\\\\"{if($7==\\\\\\\"+\\\\\\\"){ p[px++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 }else{ n[nx++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 } if(nx>1000 && px>1000){ exit } } END{ for(i in p){ print p[i] } for(i in n){ print n[i] } }\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"infile\": \"null\"}",
+            "id": 26,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "0a8c6b61f0f4",
+                "name": "text_processing",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "25717f5c-b966-483b-862d-a9b8560f1e83",
+            "errors": null,
+            "name": "Text reformatting",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1930,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1",
+            "type": "tool"
+        },
+        "27": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 11
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 27,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "14cdc77f-bc53-4e65-aa43-5b2c2a70b30b",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "28": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 13
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 28,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "b1d35416-1581-4393-b178-92815de18af6",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 130,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "29": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 15
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 29,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "f014f34b-2509-4565-8ce3-05717e0fcf38",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 250,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "30": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 17
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 30,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "75d33436-7114-4051-905f-921f30bc77be",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 370,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "31": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 19
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 31,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "9686a6f6-39ed-405e-95bf-3962312929e1",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 490,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "32": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 21
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 32,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "adac289a-f5e0-4fb7-94d4-2df6321c0c82",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 610,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "33": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 23
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 33,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "d56729a8-1443-4b06-8f2b-73723d7251d9",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 730,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "34": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "tool_version": "0.2.0.4",
+            "outputs": [
+                {
+                    "type": "sam",
+                    "name": "segemehl_out"
+                },
+                {
+                    "type": "fastq",
+                    "name": "segemehl_outunmatched"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "library|input_query": {
+                    "output_name": "trimmed_reads_single",
+                    "id": 25
+                },
+                "refGenomeSource|own_reference_genome": {
+                    "output_name": "output",
+                    "id": 8
+                }
+            },
+            "tool_state": "{\"maxout\": \"\\\"0\\\"\", \"hitstrategy\": \"\\\"1\\\"\", \"hardclip\": \"\\\"false\\\"\", \"library\": \"{\\\"__current_case__\\\": 0, \\\"input_query\\\": null, \\\"type\\\": \\\"single\\\"}\", \"jump\": \"\\\"0\\\"\", \"refGenomeSource\": \"{\\\"__current_case__\\\": 1, \\\"genomeSource\\\": \\\"history\\\", \\\"own_reference_genome\\\": null}\", \"prime3\": \"\\\"\\\"\", \"nomatchfilename\": \"\\\"false\\\"\", \"__page__\": null, \"autoclip\": \"\\\"false\\\"\", \"clipacc\": \"\\\"70\\\"\", \"evalue\": \"\\\"5.0\\\"\", \"__rerun_remap_job_id__\": null, \"accuracy\": \"\\\"90\\\"\", \"differences\": \"\\\"1\\\"\", \"maxinterval\": \"\\\"100\\\"\", \"polyA\": \"\\\"false\\\"\", \"prime5\": \"\\\"\\\"\", \"minsize\": \"\\\"12\\\"\", \"splitreads\": \"{\\\"__current_case__\\\": 0, \\\"maxsplitevalue\\\": \\\"50.0\\\", \\\"minfraglen\\\": \\\"20\\\", \\\"minfragscore\\\": \\\"18\\\", \\\"minsplicecover\\\": \\\"80\\\", \\\"splicescorescale\\\": \\\"1.0\\\", \\\"splits\\\": \\\"splits\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"order\": \"\\\"false\\\"\", \"bisulfite\": \"\\\"0\\\"\"}",
+            "id": 34,
+            "tool_shed_repository": {
+                "owner": "rnateam",
+                "changeset_revision": "9c0d4ec99ba9",
+                "name": "segemehl",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "16e3f546-3e52-40d6-833a-89dd612f4e3c",
+            "errors": null,
+            "name": "segemehl",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 850,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/segemehl/segemehl/0.2.0.4",
+            "type": "tool"
+        },
+        "35": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 27
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 35,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "303634df-0a93-4aa7-8814-c83f853f2d9f",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 130,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "36": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 28
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 36,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "c09a193a-0f13-4c19-aace-9d655aa970aa",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 250,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "37": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 29
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 37,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "0900c816-25d8-4780-adfa-c1fcffa13a71",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 370,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "38": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 30
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 38,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "bf030902-d058-4e6e-bae0-559d560348cc",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 490,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "39": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 31
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 39,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "55b1ab23-55e5-420b-a149-a4266a92a55c",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 610,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "40": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 32
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 40,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "eb91dc87-6d2c-4461-ac1e-e0401de25293",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 730,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "41": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 33
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 41,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "ba8d5fbc-81e8-4f81-8289-c501598ef9dc",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 850,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "42": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1",
+            "tool_version": "2.6.4.1",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input": {
+                    "output_name": "segemehl_out",
+                    "id": 34
+                },
+                "refgene": {
+                    "output_name": "outfile",
+                    "id": 26
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"refgene\": \"null\", \"sample_size\": \"\\\"200000\\\"\", \"mapq\": \"\\\"0\\\"\", \"input\": \"null\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 42,
+            "tool_shed_repository": {
+                "owner": "nilesh",
+                "changeset_revision": "1a052c827e88",
+                "name": "rseqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "13bfe763-b667-4935-8883-35e203b6a48f",
+            "errors": null,
+            "name": "Infer Experiment",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1",
+            "type": "tool"
+        },
+        "43": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "tool_version": "0.9.1",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "counts"
+                },
+                {
+                    "type": "tabular",
+                    "name": "othercounts"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "samfile": {
+                    "output_name": "segemehl_out",
+                    "id": 34
+                },
+                "gfffile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"featuretype\": \"\\\"exon\\\"\", \"advanced_options\": \"{\\\"__current_case__\\\": 0, \\\"advanced_options_selector\\\": \\\"simple\\\"}\", \"idattr\": \"\\\"gene_id\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"stranded\": \"\\\"no\\\"\", \"samfile\": \"null\", \"gfffile\": \"null\", \"minaqual\": \"\\\"0\\\"\", \"mode\": \"\\\"union\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 43,
+            "tool_shed_repository": {
+                "owner": "lparsons",
+                "changeset_revision": "67b0b160903a",
+                "name": "htseq_count",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "f0d94ae7-0039-44f6-acf2-97149bf83694",
+            "errors": null,
+            "name": "htseq-count",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 970,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/lparsons/htseq_count/htseq_count/0.9.1",
+            "type": "tool"
+        },
+        "44": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6",
+            "tool_version": "2.11.40.6",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "deseq_out"
+                },
+                {
+                    "type": "pdf",
+                    "name": "plots"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "select_data|rep_factorName_0|rep_factorLevel_1|countsFile": [
+                    {
+                        "output_name": "counts",
+                        "id": 43
+                    },
+                    {
+                        "output_name": "counts",
+                        "id": 41
+                    },
+                    {
+                        "output_name": "counts",
+                        "id": 40
+                    },
+                    {
+                        "output_name": "counts",
+                        "id": 39
+                    }
+                ],
+                "select_data|rep_factorName_0|rep_factorLevel_0|countsFile": [
+                    {
+                        "output_name": "counts",
+                        "id": 38
+                    },
+                    {
+                        "output_name": "counts",
+                        "id": 37
+                    },
+                    {
+                        "output_name": "counts",
+                        "id": 36
+                    },
+                    {
+                        "output_name": "counts",
+                        "id": 35
+                    }
+                ]
+            },
+            "tool_state": "{\"fit_type\": \"\\\"1\\\"\", \"__page__\": null, \"normVST\": \"\\\"false\\\"\", \"tximport\": \"{\\\"__current_case__\\\": 1, \\\"tximport_selector\\\": \\\"count\\\"}\", \"esf\": \"\\\"\\\"\", \"outlier_replace_off\": \"\\\"false\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"auto_mean_filter_off\": \"\\\"false\\\"\", \"header\": \"\\\"true\\\"\", \"normCounts\": \"\\\"false\\\"\", \"outlier_filter_off\": \"\\\"false\\\"\", \"many_contrasts\": \"\\\"false\\\"\", \"batch_factors\": \"null\", \"pdf\": \"\\\"true\\\"\", \"normRLog\": \"\\\"false\\\"\", \"select_data\": \"{\\\"__current_case__\\\": 1, \\\"how\\\": \\\"datasets_per_level\\\", \\\"rep_factorName\\\": [{\\\"__index__\\\": 0, \\\"factorName\\\": \\\"treatment\\\", \\\"rep_factorLevel\\\": [{\\\"__index__\\\": 0, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"control\\\"}, {\\\"__index__\\\": 1, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"treated\\\"}]}]}\"}",
+            "id": 44,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "0696db066a5b",
+                "name": "deseq2",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "bb064c9c-c373-41be-866a-170a3d4a5127",
+            "errors": null,
+            "name": "DESeq2",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 890
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6",
+            "type": "tool"
+        }
+    },
+    "annotation": "",
+    "a_galaxy_workflow": "true"
+}
