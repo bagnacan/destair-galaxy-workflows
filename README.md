@@ -16,12 +16,15 @@ Galaxy tools for DGEA and RRBS/BS-Seq data analyses.
 
 ## Run workflows
 
-Workflows depend on their tools, which in turn are available depending on the Galaxy
-*flavor* in use. For this reason, to make these workflows run it is important to make
-sure that you are running the [Galaxy workflow generator](https://github.com/destairdenbi/galaxy-workflow-generator).  
+Workflows depend on their tools, which in turn are available depending on some Galaxy
+instances. For this reason, to make these workflows run it is important to make sure
+that you are running the [Galaxy workflow generator](https://github.com/destairdenbi/galaxy-workflow-generator),
+or any other instance that provides all necessary tools.
 
-From the Galaxy workflow generator header, click ``Workflow``, and chose which one to
-run.
+If you are using the Galaxy workflow generator, these tools are already included in
+the instance. From the header, click ``Workflow``, and chose which one to run.  
+If you are not using the workflow generator, you have to download them, and upload
+them in your running instance.
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
@@ -29,7 +32,7 @@ run.
 ## Contributed workflows
 
 The Galaxy workflow generator provides workflows for DGEA and RRBS/BS-Seq data
-analyses.  
+analyses.
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
 
