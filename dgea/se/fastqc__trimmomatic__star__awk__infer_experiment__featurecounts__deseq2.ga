@@ -1,1 +1,1833 @@
-{"uuid": "c19b38cc-9377-47f6-9680-baa8e736fe26", "tags": [], "format-version": "0.1", "name": "trimmomatic_star_awk_infer-experiment_featurecounts_deseq2", "version": 0, "steps": {"0": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz\"}", "id": 0, "uuid": "6c6453d3-5c49-4089-baec-e8e8b075f8fc", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz", "description": ""}], "position": {"top": 10, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "1": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz\"}", "id": 1, "uuid": "9d8e24cb-1f3a-455b-ba5c-e3532797dece", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz", "description": ""}], "position": {"top": 130, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "2": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz\"}", "id": 2, "uuid": "8a1c665d-194c-4417-994d-ffe6d23fc0e2", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz", "description": ""}], "position": {"top": 250, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "3": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz\"}", "id": 3, "uuid": "28831784-d743-419a-8a52-c1d7e3b59672", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz", "description": ""}], "position": {"top": 370, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "4": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz\"}", "id": 4, "uuid": "64e6c967-7b5c-45cb-a78b-1978750cfb5b", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz", "description": ""}], "position": {"top": 490, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "5": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz\"}", "id": 5, "uuid": "4e770932-18bf-482c-aa03-b6de34f34f1e", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz", "description": ""}], "position": {"top": 610, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "6": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz\"}", "id": 6, "uuid": "63cefabe-23f5-41a6-9450-fb808fd6b316", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz", "description": ""}], "position": {"top": 730, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "7": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz\"}", "id": 7, "uuid": "95714105-bbe5-43a6-a4c6-5007e6147d0d", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz", "description": ""}], "position": {"top": 850, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "8": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa\"}", "id": 8, "uuid": "2d322f49-6f42-45c5-bb37-f8ccb3260cca", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa", "description": ""}], "position": {"top": 970, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "9": {"tool_id": null, "tool_version": null, "outputs": [], "workflow_outputs": [], "input_connections": {}, "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf\"}", "id": 9, "uuid": "4b7c592d-0e9c-4a93-99d6-8c46fe97f065", "errors": null, "name": "Input dataset", "label": null, "inputs": [{"name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf", "description": ""}], "position": {"top": 1090, "left": 10}, "annotation": "", "content_id": null, "type": "data_input"}, "10": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 0}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 10, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "c37b8515-4d06-4d1c-9898-9deed8ee9206", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "11": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 0}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 11, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "af87189b-fcf6-4042-aa57-ea94abe91513", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 970, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "12": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 1}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 12, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "5511b49c-e5a6-4950-915f-b3eb9ad86f29", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 130, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "13": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 1}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 13, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "93721d01-1da1-4055-9cc2-915c222990ad", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1090, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "14": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 2}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 14, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "369fbec0-e2d6-4b44-a7d7-a6dfa53bd0e3", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 250, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "15": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 2}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 15, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "eac006d3-ec65-4ff2-8ca8-90a40c4a93f1", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1210, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "16": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 3}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 16, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "e34ea8a4-a547-4612-b891-eed811ea3354", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 370, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "17": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 3}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 17, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "9eae30d6-9e4e-4e22-a97e-2adca01e280c", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1330, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "18": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 4}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 18, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "f18c6885-361c-41ef-a181-2e45d288f5fe", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 490, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "19": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 4}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 19, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "daf61a05-e536-4b82-91c9-2e6586df556e", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1450, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "20": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 5}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 20, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "57d4cd7e-3223-429b-b541-6f67e3d7f079", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 610, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "21": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 5}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 21, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "09104f88-17b7-4309-b863-3e9d95b65c35", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1570, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "22": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 6}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 22, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "3c9d21c9-c53d-4244-9817-de0cfccab824", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 730, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "23": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 6}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 23, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "214d845a-e782-4eb9-acef-c2509ce4658d", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1690, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "24": {"tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "tool_version": "0.72+galaxy1", "outputs": [{"type": "html", "name": "html_file"}, {"type": "txt", "name": "text_file"}], "workflow_outputs": [], "input_connections": {"input_file": {"output_name": "output", "id": 7}}, "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}", "id": 24, "tool_shed_repository": {"owner": "devteam", "changeset_revision": "e7b2202befea", "name": "fastqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "c387cc15-35b7-44f4-9058-92074d98fa51", "errors": null, "name": "FastQC", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 850, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1", "type": "tool"}, "25": {"tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "tool_version": "0.38.0", "outputs": [{"type": "input", "name": "fastq_out"}], "workflow_outputs": [], "input_connections": {"readtype|fastq_in": {"output_name": "output", "id": 7}}, "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 25, "tool_shed_repository": {"owner": "pjbriggs", "changeset_revision": "898b67846b47", "name": "trimmomatic", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "cc30c996-ddc1-422d-bdfc-b3ef74336911", "errors": null, "name": "Trimmomatic", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1810, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0", "type": "tool"}, "26": {"tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1", "tool_version": "1.1.1", "outputs": [{"type": "input", "name": "outfile"}], "workflow_outputs": [], "input_connections": {"infile": {"output_name": "output", "id": 9}}, "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"code\": \"\\\"!/^#/ && $3==\\\\\\\"exon\\\\\\\"{if($7==\\\\\\\"+\\\\\\\"){ p[px++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 }else{ n[nx++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 } if(nx>1000 && px>1000){ exit } } END{ for(i in p){ print p[i] } for(i in n){ print n[i] } }\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"infile\": \"null\"}", "id": 26, "tool_shed_repository": {"owner": "bgruening", "changeset_revision": "0a8c6b61f0f4", "name": "text_processing", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "8e24bec7-377a-4e5d-a678-4db396c0008e", "errors": null, "name": "Text reformatting", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 1930, "left": 230}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1", "type": "tool"}, "27": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 11}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 27, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "7e463aa1-f354-483e-b2b4-ed9f3f4aaa36", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "28": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 13}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 28, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "08080474-1bf4-47f3-87e3-2669f5bd3b3f", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 130, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "29": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 15}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 29, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "828e76f7-7747-46ed-9ea2-ef54145ba75d", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 250, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "30": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 17}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 30, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "03a3db9c-8b6e-4116-8356-e91a9efacbdb", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 370, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "31": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 19}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 31, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "d53a178c-57b9-44c9-a603-e4fb39d1c091", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 490, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "32": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 21}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 32, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "3beb024f-06d6-4fcd-a9e9-61585121a3cc", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 610, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "33": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 23}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 33, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "d1541601-27fa-4d78-9fb1-04c70ca68982", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 730, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "34": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "tool_version": "2.7.2b", "outputs": [{"type": "txt", "name": "output_log"}, {"type": "interval", "name": "splice_junctions"}, {"type": "bam", "name": "mapped_reads"}], "workflow_outputs": [], "input_connections": {"refGenomeSource|genomeFastaFiles": {"output_name": "output", "id": 8}, "singlePaired|input1": {"output_name": "fastq_out", "id": 25}}, "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}", "id": 34, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "b9e04854e2bb", "name": "rgrnastar", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "2c518664-5c4f-433d-815a-50fc84bb88ef", "errors": null, "name": "RNA STAR", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 850, "left": 450}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b", "type": "tool"}, "35": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 27}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 35, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "0220c204-cb07-46dc-b5f5-266cf1d08160", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 130, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "36": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 28}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 36, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "a178c580-9af7-4291-a09a-ec6f4bbd3576", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 250, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "37": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 29}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 37, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "a57ae494-b04b-4711-a58c-bae2fcf42a5c", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 370, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "38": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 30}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 38, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "9c576b35-b591-4463-8b3b-ff9cb2757bc5", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 490, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "39": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 31}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 39, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "39f04e90-ebe1-4504-8fe6-75f6cf933af5", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 610, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "40": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 32}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 40, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "e1aba553-412f-4b56-9f0b-bc188eab8735", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 730, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "41": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 33}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 41, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "c921e0ca-747e-4280-a494-3b7c7f18c57a", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 850, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "42": {"tool_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1", "tool_version": "2.6.4.1", "outputs": [{"type": "txt", "name": "output"}], "workflow_outputs": [], "input_connections": {"input": {"output_name": "mapped_reads", "id": 34}, "refgene": {"output_name": "outfile", "id": 26}}, "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"refgene\": \"null\", \"sample_size\": \"\\\"200000\\\"\", \"mapq\": \"\\\"0\\\"\", \"input\": \"null\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", "id": 42, "tool_shed_repository": {"owner": "nilesh", "changeset_revision": "1a052c827e88", "name": "rseqc", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "8ce58ba3-19af-4135-8f83-d5b10d6651f3", "errors": null, "name": "Infer Experiment", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1", "type": "tool"}, "43": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "tool_version": "1.6.4", "outputs": [{"type": "tabular", "name": "output_short"}, {"type": "tabular", "name": "output_summary"}], "workflow_outputs": [], "input_connections": {"alignment": {"output_name": "mapped_reads", "id": 34}, "anno|reference_gene_sets": {"output_name": "output", "id": 9}}, "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}", "id": 43, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "9301937c9037", "name": "featurecounts", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "357a591b-2b11-4e90-8878-55ab1886b026", "errors": null, "name": "featureCounts", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 970, "left": 670}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4", "type": "tool"}, "44": {"tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6", "tool_version": "2.11.40.6", "outputs": [{"type": "tabular", "name": "deseq_out"}, {"type": "pdf", "name": "plots"}], "workflow_outputs": [], "input_connections": {"select_data|rep_factorName_0|rep_factorLevel_1|countsFile": [{"output_name": "output_short", "id": 43}, {"output_name": "output_short", "id": 41}, {"output_name": "output_short", "id": 40}, {"output_name": "output_short", "id": 39}], "select_data|rep_factorName_0|rep_factorLevel_0|countsFile": [{"output_name": "output_short", "id": 38}, {"output_name": "output_short", "id": 37}, {"output_name": "output_short", "id": 36}, {"output_name": "output_short", "id": 35}]}, "tool_state": "{\"fit_type\": \"\\\"1\\\"\", \"__page__\": null, \"normVST\": \"\\\"false\\\"\", \"tximport\": \"{\\\"__current_case__\\\": 1, \\\"tximport_selector\\\": \\\"count\\\"}\", \"esf\": \"\\\"\\\"\", \"outlier_replace_off\": \"\\\"false\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"auto_mean_filter_off\": \"\\\"false\\\"\", \"header\": \"\\\"true\\\"\", \"normCounts\": \"\\\"false\\\"\", \"outlier_filter_off\": \"\\\"false\\\"\", \"many_contrasts\": \"\\\"false\\\"\", \"batch_factors\": \"null\", \"pdf\": \"\\\"true\\\"\", \"normRLog\": \"\\\"false\\\"\", \"select_data\": \"{\\\"__current_case__\\\": 1, \\\"how\\\": \\\"datasets_per_level\\\", \\\"rep_factorName\\\": [{\\\"__index__\\\": 0, \\\"factorName\\\": \\\"treatment\\\", \\\"rep_factorLevel\\\": [{\\\"__index__\\\": 0, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"control\\\"}, {\\\"__index__\\\": 1, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"treated\\\"}]}]}\"}", "id": 44, "tool_shed_repository": {"owner": "iuc", "changeset_revision": "0696db066a5b", "name": "deseq2", "tool_shed": "toolshed.g2.bx.psu.edu"}, "uuid": "f46ba3d8-f895-46cb-97dd-acd7af8287e8", "errors": null, "name": "DESeq2", "post_job_actions": {}, "label": null, "inputs": [], "position": {"top": 10, "left": 890}, "annotation": "", "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6", "type": "tool"}}, "annotation": "", "a_galaxy_workflow": "true"}
+{
+    "uuid": "c19b38cc-9377-47f6-9680-baa8e736fe26",
+    "tags": [],
+    "format-version": "0.1",
+    "name": "trimmomatic_star_awk_infer-experiment_featurecounts_deseq2",
+    "version": 0,
+    "steps": {
+        "0": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz\"}",
+            "id": 0,
+            "uuid": "6c6453d3-5c49-4089-baec-e8e8b075f8fc",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N1.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 10,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "1": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz\"}",
+            "id": 1,
+            "uuid": "9d8e24cb-1f3a-455b-ba5c-e3532797dece",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N2.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 130,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "2": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz\"}",
+            "id": 2,
+            "uuid": "8a1c665d-194c-4417-994d-ffe6d23fc0e2",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N3.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 250,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "3": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz\"}",
+            "id": 3,
+            "uuid": "28831784-d743-419a-8a52-c1d7e3b59672",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_ctr.N4.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 370,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "4": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz\"}",
+            "id": 4,
+            "uuid": "64e6c967-7b5c-45cb-a78b-1978750cfb5b",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N1.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 490,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "5": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz\"}",
+            "id": 5,
+            "uuid": "4e770932-18bf-482c-aa03-b6de34f34f1e",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N2.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 610,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "6": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz\"}",
+            "id": 6,
+            "uuid": "63cefabe-23f5-41a6-9450-fb808fd6b316",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N3.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 730,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "7": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz\"}",
+            "id": 7,
+            "uuid": "95714105-bbe5-43a6-a4c6-5007e6147d0d",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/SE/rna_treat.N4.fastq.gz",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 850,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "8": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa\"}",
+            "id": 8,
+            "uuid": "2d322f49-6f42-45c5-bb37-f8ccb3260cca",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.fa",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 970,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "9": {
+            "tool_id": null,
+            "tool_version": null,
+            "outputs": [],
+            "workflow_outputs": [],
+            "input_connections": {},
+            "tool_state": "{\"name\": \"https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf\"}",
+            "id": 9,
+            "uuid": "4b7c592d-0e9c-4a93-99d6-8c46fe97f065",
+            "errors": null,
+            "name": "Input dataset",
+            "label": null,
+            "inputs": [
+                {
+                    "name": "https://github.com/destairdenbi/trainings/raw/master/raw_data/rna/hg38.goi.gtf",
+                    "description": ""
+                }
+            ],
+            "position": {
+                "top": 1090,
+                "left": 10
+            },
+            "annotation": "",
+            "content_id": null,
+            "type": "data_input"
+        },
+        "10": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 0
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 10,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "c37b8515-4d06-4d1c-9898-9deed8ee9206",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "11": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 0
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 11,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "af87189b-fcf6-4042-aa57-ea94abe91513",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 970,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "12": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 1
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 12,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "5511b49c-e5a6-4950-915f-b3eb9ad86f29",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 130,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "13": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 1
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 13,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "93721d01-1da1-4055-9cc2-915c222990ad",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1090,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "14": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 2
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 14,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "369fbec0-e2d6-4b44-a7d7-a6dfa53bd0e3",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 250,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "15": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 2
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 15,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "eac006d3-ec65-4ff2-8ca8-90a40c4a93f1",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1210,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "16": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 3
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 16,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "e34ea8a4-a547-4612-b891-eed811ea3354",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 370,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "17": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 3
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 17,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "9eae30d6-9e4e-4e22-a97e-2adca01e280c",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1330,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "18": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 4
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 18,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "f18c6885-361c-41ef-a181-2e45d288f5fe",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 490,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "19": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 4
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 19,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "daf61a05-e536-4b82-91c9-2e6586df556e",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1450,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "20": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 5
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 20,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "57d4cd7e-3223-429b-b541-6f67e3d7f079",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 610,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "21": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 5
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 21,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "09104f88-17b7-4309-b863-3e9d95b65c35",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1570,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "22": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 6
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 22,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "3c9d21c9-c53d-4244-9817-de0cfccab824",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 730,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "23": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 6
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 23,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "214d845a-e782-4eb9-acef-c2509ce4658d",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1690,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "24": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_version": "0.72+galaxy1",
+            "outputs": [
+                {
+                    "type": "html",
+                    "name": "html_file"
+                },
+                {
+                    "type": "txt",
+                    "name": "text_file"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input_file": {
+                    "output_name": "output",
+                    "id": 7
+                }
+            },
+            "tool_state": "{\"min_length\": \"\\\"\\\"\", \"kmers\": \"\\\"7\\\"\", \"limits\": \"null\", \"input_file\": \"null\", \"__page__\": null, \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"contaminants\": \"null\", \"adapters\": \"null\", \"nogroup\": \"\\\"false\\\"\"}",
+            "id": 24,
+            "tool_shed_repository": {
+                "owner": "devteam",
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "c387cc15-35b7-44f4-9058-92074d98fa51",
+            "errors": null,
+            "name": "FastQC",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 850,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "type": "tool"
+        },
+        "25": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "tool_version": "0.38.0",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "fastq_out"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "readtype|fastq_in": {
+                    "output_name": "output",
+                    "id": 7
+                }
+            },
+            "tool_state": "{\"operations\": \"[{\\\"__index__\\\": 0, \\\"operation\\\": {\\\"__current_case__\\\": 0, \\\"name\\\": \\\"SLIDINGWINDOW\\\", \\\"required_quality\\\": \\\"20\\\", \\\"window_size\\\": \\\"4\\\"}}, {\\\"__index__\\\": 1, \\\"operation\\\": {\\\"__current_case__\\\": 1, \\\"minlen\\\": \\\"20\\\", \\\"name\\\": \\\"MINLEN\\\"}}]\", \"__page__\": null, \"output_logs\": \"\\\"false\\\"\", \"output_err\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"readtype\": \"{\\\"__current_case__\\\": 0, \\\"fastq_in\\\": null, \\\"single_or_paired\\\": \\\"se\\\"}\", \"illuminaclip\": \"{\\\"__current_case__\\\": 1, \\\"do_illuminaclip\\\": \\\"false\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 25,
+            "tool_shed_repository": {
+                "owner": "pjbriggs",
+                "changeset_revision": "898b67846b47",
+                "name": "trimmomatic",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "cc30c996-ddc1-422d-bdfc-b3ef74336911",
+            "errors": null,
+            "name": "Trimmomatic",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1810,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.38.0",
+            "type": "tool"
+        },
+        "26": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1",
+            "tool_version": "1.1.1",
+            "outputs": [
+                {
+                    "type": "input",
+                    "name": "outfile"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "infile": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"code\": \"\\\"!/^#/ && $3==\\\\\\\"exon\\\\\\\"{if($7==\\\\\\\"+\\\\\\\"){ p[px++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 }else{ n[nx++] = $1\\\\\\\"\\\\\\\\t\\\\\\\"$4\\\\\\\"\\\\\\\\t\\\\\\\"$5\\\\\\\"\\\\\\\\t.\\\\\\\\t.\\\\\\\\t\\\\\\\"$7 } if(nx>1000 && px>1000){ exit } } END{ for(i in p){ print p[i] } for(i in n){ print n[i] } }\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"infile\": \"null\"}",
+            "id": 26,
+            "tool_shed_repository": {
+                "owner": "bgruening",
+                "changeset_revision": "0a8c6b61f0f4",
+                "name": "text_processing",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "8e24bec7-377a-4e5d-a678-4db396c0008e",
+            "errors": null,
+            "name": "Text reformatting",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 1930,
+                "left": 230
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/1.1.1",
+            "type": "tool"
+        },
+        "27": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 11
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 27,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "7e463aa1-f354-483e-b2b4-ed9f3f4aaa36",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "28": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 13
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 28,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "08080474-1bf4-47f3-87e3-2669f5bd3b3f",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 130,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "29": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 15
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 29,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "828e76f7-7747-46ed-9ea2-ef54145ba75d",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 250,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "30": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 17
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 30,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "03a3db9c-8b6e-4116-8356-e91a9efacbdb",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 370,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "31": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 19
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 31,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "d53a178c-57b9-44c9-a603-e4fb39d1c091",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 490,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "32": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 21
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 32,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "3beb024f-06d6-4fcd-a9e9-61585121a3cc",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 610,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "33": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 23
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 33,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "d1541601-27fa-4d78-9fb1-04c70ca68982",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 730,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "34": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "tool_version": "2.7.2b",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output_log"
+                },
+                {
+                    "type": "interval",
+                    "name": "splice_junctions"
+                },
+                {
+                    "type": "bam",
+                    "name": "mapped_reads"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "refGenomeSource|genomeFastaFiles": {
+                    "output_name": "output",
+                    "id": 8
+                },
+                "singlePaired|input1": {
+                    "output_name": "fastq_out",
+                    "id": 25
+                }
+            },
+            "tool_state": "{\"quantmode_output\": \"{\\\"__current_case__\\\": 0, \\\"quantMode\\\": \\\"-\\\"}\", \"__page__\": null, \"perf\": \"{\\\"outBAMsortingBinsN\\\": \\\"50\\\"}\", \"singlePaired\": \"{\\\"__current_case__\\\": 0, \\\"input1\\\": null, \\\"sPaired\\\": \\\"single\\\"}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"twopass\": \"{\\\"__current_case__\\\": 0, \\\"sj_precalculated\\\": \\\"\\\", \\\"twopassMode\\\": \\\"None\\\", \\\"twopass_read_subset\\\": \\\"\\\"}\", \"filter\": \"{\\\"basic_filters\\\": null, \\\"output_params2\\\": {\\\"__current_case__\\\": 1, \\\"output_select2\\\": \\\"no\\\"}}\", \"chimOutType\": \"\\\"\\\"\", \"algo\": \"{\\\"params\\\": {\\\"__current_case__\\\": 0, \\\"settingsType\\\": \\\"default\\\"}}\", \"oformat\": \"{\\\"HI_offset\\\": \\\"1\\\", \\\"outSAMattributes\\\": [\\\"NH\\\", \\\"HI\\\", \\\"AS\\\", \\\"nM\\\", \\\"ch\\\"], \\\"outSAMmapqUnique\\\": \\\"60\\\", \\\"outSAMprimaryFlag\\\": \\\"OneBestScore\\\"}\", \"refGenomeSource\": \"{\\\"GTFconditional\\\": {\\\"GTFselect\\\": \\\"without-gtf\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"geneSource\\\": \\\"history\\\", \\\"genomeFastaFiles\\\": null, \\\"genomeSAindexNbases\\\": \\\"\\\"}\"}",
+            "id": 34,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "b9e04854e2bb",
+                "name": "rgrnastar",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "2c518664-5c4f-433d-815a-50fc84bb88ef",
+            "errors": null,
+            "name": "RNA STAR",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 850,
+                "left": 450
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.2b",
+            "type": "tool"
+        },
+        "35": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 27
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 35,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "0220c204-cb07-46dc-b5f5-266cf1d08160",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 130,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "36": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 28
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 36,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "a178c580-9af7-4291-a09a-ec6f4bbd3576",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 250,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "37": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 29
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 37,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "a57ae494-b04b-4711-a58c-bae2fcf42a5c",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 370,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "38": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 30
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 38,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "9c576b35-b591-4463-8b3b-ff9cb2757bc5",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 490,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "39": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 31
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 39,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "39f04e90-ebe1-4504-8fe6-75f6cf933af5",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 610,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "40": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 32
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 40,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "e1aba553-412f-4b56-9f0b-bc188eab8735",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 730,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "41": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 33
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 41,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "c921e0ca-747e-4280-a494-3b7c7f18c57a",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 850,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "42": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1",
+            "tool_version": "2.6.4.1",
+            "outputs": [
+                {
+                    "type": "txt",
+                    "name": "output"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "input": {
+                    "output_name": "mapped_reads",
+                    "id": 34
+                },
+                "refgene": {
+                    "output_name": "outfile",
+                    "id": 26
+                }
+            },
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"refgene\": \"null\", \"sample_size\": \"\\\"200000\\\"\", \"mapq\": \"\\\"0\\\"\", \"input\": \"null\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}",
+            "id": 42,
+            "tool_shed_repository": {
+                "owner": "nilesh",
+                "changeset_revision": "1a052c827e88",
+                "name": "rseqc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "8ce58ba3-19af-4135-8f83-d5b10d6651f3",
+            "errors": null,
+            "name": "Infer Experiment",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1",
+            "type": "tool"
+        },
+        "43": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "tool_version": "1.6.4",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "output_short"
+                },
+                {
+                    "type": "tabular",
+                    "name": "output_summary"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "alignment": {
+                    "output_name": "mapped_reads",
+                    "id": 34
+                },
+                "anno|reference_gene_sets": {
+                    "output_name": "output",
+                    "id": 9
+                }
+            },
+            "tool_state": "{\"pe_parameters\": \"{\\\"exclude_chimerics\\\": \\\"true\\\", \\\"fragment_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"fragment_counting\\\": \\\"\\\"}, \\\"only_both_ends\\\": \\\"false\\\"}\", \"strand_specificity\": \"\\\"0\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"format\": \"\\\"tabdel_short\\\"\", \"include_feature_length_file\": \"\\\"false\\\"\", \"anno\": \"{\\\"__current_case__\\\": 2, \\\"anno_select\\\": \\\"history\\\", \\\"reference_gene_sets\\\": null}\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"extended_parameters\": \"{\\\"R\\\": \\\"false\\\", \\\"by_read_group\\\": \\\"false\\\", \\\"contribute_to_multiple_features\\\": \\\"false\\\", \\\"count_split_alignments_only\\\": \\\"false\\\", \\\"exon_exon_junction_read_counting_enabled\\\": {\\\"__current_case__\\\": 1, \\\"count_exon_exon_junction_reads\\\": \\\"false\\\"}, \\\"frac_overlap\\\": \\\"0\\\", \\\"frac_overlap_feature\\\": \\\"0\\\", \\\"gff_feature_attribute\\\": \\\"gene_id\\\", \\\"gff_feature_type\\\": \\\"exon\\\", \\\"ignore_dup\\\": \\\"false\\\", \\\"largest_overlap\\\": \\\"false\\\", \\\"long_reads\\\": \\\"false\\\", \\\"mapping_quality\\\": \\\"0\\\", \\\"min_overlap\\\": \\\"10\\\", \\\"multimapping_enabled\\\": {\\\"__current_case__\\\": 1, \\\"multimapping_counts\\\": \\\"\\\"}, \\\"primary\\\": \\\"false\\\", \\\"read_extension_3p\\\": \\\"0\\\", \\\"read_extension_5p\\\": \\\"0\\\", \\\"read_reduction\\\": \\\"\\\", \\\"summarization_level\\\": \\\"false\\\"}\", \"alignment\": \"null\"}",
+            "id": 43,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "9301937c9037",
+                "name": "featurecounts",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "357a591b-2b11-4e90-8878-55ab1886b026",
+            "errors": null,
+            "name": "featureCounts",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 970,
+                "left": 670
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/1.6.4",
+            "type": "tool"
+        },
+        "44": {
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6",
+            "tool_version": "2.11.40.6",
+            "outputs": [
+                {
+                    "type": "tabular",
+                    "name": "deseq_out"
+                },
+                {
+                    "type": "pdf",
+                    "name": "plots"
+                }
+            ],
+            "workflow_outputs": [],
+            "input_connections": {
+                "select_data|rep_factorName_0|rep_factorLevel_1|countsFile": [
+                    {
+                        "output_name": "output_short",
+                        "id": 43
+                    },
+                    {
+                        "output_name": "output_short",
+                        "id": 41
+                    },
+                    {
+                        "output_name": "output_short",
+                        "id": 40
+                    },
+                    {
+                        "output_name": "output_short",
+                        "id": 39
+                    }
+                ],
+                "select_data|rep_factorName_0|rep_factorLevel_0|countsFile": [
+                    {
+                        "output_name": "output_short",
+                        "id": 38
+                    },
+                    {
+                        "output_name": "output_short",
+                        "id": 37
+                    },
+                    {
+                        "output_name": "output_short",
+                        "id": 36
+                    },
+                    {
+                        "output_name": "output_short",
+                        "id": 35
+                    }
+                ]
+            },
+            "tool_state": "{\"fit_type\": \"\\\"1\\\"\", \"__page__\": null, \"normVST\": \"\\\"false\\\"\", \"tximport\": \"{\\\"__current_case__\\\": 1, \\\"tximport_selector\\\": \\\"count\\\"}\", \"esf\": \"\\\"\\\"\", \"outlier_replace_off\": \"\\\"false\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"auto_mean_filter_off\": \"\\\"false\\\"\", \"header\": \"\\\"true\\\"\", \"normCounts\": \"\\\"false\\\"\", \"outlier_filter_off\": \"\\\"false\\\"\", \"many_contrasts\": \"\\\"false\\\"\", \"batch_factors\": \"null\", \"pdf\": \"\\\"true\\\"\", \"normRLog\": \"\\\"false\\\"\", \"select_data\": \"{\\\"__current_case__\\\": 1, \\\"how\\\": \\\"datasets_per_level\\\", \\\"rep_factorName\\\": [{\\\"__index__\\\": 0, \\\"factorName\\\": \\\"treatment\\\", \\\"rep_factorLevel\\\": [{\\\"__index__\\\": 0, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"control\\\"}, {\\\"__index__\\\": 1, \\\"countsFile\\\": null, \\\"factorLevel\\\": \\\"treated\\\"}]}]}\"}",
+            "id": 44,
+            "tool_shed_repository": {
+                "owner": "iuc",
+                "changeset_revision": "0696db066a5b",
+                "name": "deseq2",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "uuid": "f46ba3d8-f895-46cb-97dd-acd7af8287e8",
+            "errors": null,
+            "name": "DESeq2",
+            "post_job_actions": {},
+            "label": null,
+            "inputs": [],
+            "position": {
+                "top": 10,
+                "left": 890
+            },
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6",
+            "type": "tool"
+        }
+    },
+    "annotation": "",
+    "a_galaxy_workflow": "true"
+}
