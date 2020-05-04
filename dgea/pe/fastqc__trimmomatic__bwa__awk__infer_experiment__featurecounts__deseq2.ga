@@ -2,7 +2,7 @@
     "uuid": "6fe18903-4fdd-4599-9cc3-5a293c3e2e9c",
     "tags": [],
     "format-version": "0.1",
-    "name": "ga2",
+    "name": "Differential gene expression analysis of paired-end NGS data using FastQC, Trimmomatic, BWA, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {
