@@ -2,7 +2,7 @@
     "uuid": "72e871e7-d1d0-40ed-8106-69fe504fefc6",
     "tags": [],
     "format-version": "0.1",
-    "name": "trim-galore_hisat2_awk_infer-experiment_featurecounts_deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Trim Galore!, HISAT2, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {

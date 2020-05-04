@@ -2,7 +2,7 @@
     "uuid": "0dd728f8-4c75-4ef9-97c3-d28b60b00624",
     "tags": [],
     "format-version": "0.1",
-    "name": "trim-galore_bwa_awk_infer-experiment_featurecounts_deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Trim Galore!, BWA, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {

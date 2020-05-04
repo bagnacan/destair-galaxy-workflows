@@ -2,7 +2,7 @@
     "uuid": "47c7f5d7-930e-46d3-a582-2b013a87f528",
     "tags": [],
     "format-version": "0.1",
-    "name": "trim-galore_segemehl_awk_infer-experiment_feature-counts_deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Trim Galore!, segemehl, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {

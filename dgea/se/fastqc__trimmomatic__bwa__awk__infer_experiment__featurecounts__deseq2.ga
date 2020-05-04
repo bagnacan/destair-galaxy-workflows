@@ -2,7 +2,7 @@
     "uuid": "8c8c54b5-a24f-4c72-9e6e-6edbdb946b41",
     "tags": [],
     "format-version": "0.1",
-    "name": "trimmomatic_bwa_awk_infer-experiment_featurecounts_deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Trimmomatic, BWA, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {
