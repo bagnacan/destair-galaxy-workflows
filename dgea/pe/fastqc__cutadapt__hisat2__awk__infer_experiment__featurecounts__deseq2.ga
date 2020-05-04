@@ -2,7 +2,7 @@
     "uuid": "04b2de6b-9e19-49b5-827c-5566a0c128a2",
     "tags": [],
     "format-version": "0.1",
-    "name": "fastqc__cutadapt__hisat2__awk__infer_experiment__featurecounts__deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Cutadapt, HISAT2, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {

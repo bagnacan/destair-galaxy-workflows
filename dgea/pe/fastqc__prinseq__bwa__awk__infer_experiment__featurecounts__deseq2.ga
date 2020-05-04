@@ -2,7 +2,7 @@
     "uuid": "c6e313ad-a73f-421f-a48b-2c3e43d3ab90",
     "tags": [],
     "format-version": "0.1",
-    "name": "fastqc__prinseq__star__awk__infer_experiment__featurecounts__deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, PRINSEQ, BWA, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {
