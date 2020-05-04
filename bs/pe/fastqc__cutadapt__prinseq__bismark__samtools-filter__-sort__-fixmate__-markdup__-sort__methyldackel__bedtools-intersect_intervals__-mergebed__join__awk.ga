@@ -2,7 +2,7 @@
     "uuid": "a5676884-3c73-4d32-8be6-dec7c8dcdd12",
     "tags": [],
     "format-version": "0.1",
-    "name": "fastqc__cutadapt__prinseq__bismark__filter_sam__samtools_sort__samtools_fixmate__samtools_markdup__samtools_sort__methyldackel__bedtools_intersect_intervals__bedtools_mergebed__join__awk",
+    "name": "BS-Seq analysis of paired-end methylation data using FastQC, Cutadapt, PRINSEQ, Bismark, SAMtools-filter, -sort, -fixmate, -markdup, -sort, MethylDackel, BEDtools-intersect intervals, -mergeBED, join, AWK",
     "version": 0,
     "steps": {
         "0": {
