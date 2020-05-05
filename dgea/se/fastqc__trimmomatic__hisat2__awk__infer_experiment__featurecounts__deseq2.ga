@@ -2,7 +2,7 @@
     "uuid": "31ff7ed9-a9f4-4857-924f-90e9e851adb5",
     "tags": [],
     "format-version": "0.1",
-    "name": "trimmomatic_hisat2_awk_infer-experiment_featurecounts_deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Trimmomatic, HISAT2, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {

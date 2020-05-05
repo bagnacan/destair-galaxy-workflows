@@ -2,7 +2,7 @@
     "uuid": "c8aa58f8-d647-44ea-9a84-b5db2c79ba5c",
     "tags": [],
     "format-version": "0.1",
-    "name": "fastqc__cutadapt__bwa__awk__infer_experiment__featurecounts__deseq2",
+    "name": "Differential gene expression analysis of paired-end NGS data using FastQC, Cutadapt, BWA, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {

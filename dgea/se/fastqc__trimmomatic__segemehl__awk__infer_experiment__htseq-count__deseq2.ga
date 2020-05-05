@@ -2,7 +2,7 @@
     "uuid": "cfa3e414-e901-4837-a01d-d344b6666553",
     "tags": [],
     "format-version": "0.1",
-    "name": "fastqc__trimmomatic__segemehl__awk__infer_experiment__htseq-count__deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Trimmomatic, segemehl, AWK, Infer Experiment, HTSeq-count, DESeq2",
     "version": 0,
     "steps": {
         "0": {

@@ -2,7 +2,7 @@
     "uuid": "f71619ed-3aa6-4a06-8178-8faf9e631320",
     "tags": [],
     "format-version": "0.1",
-    "name": "trimmomatic_star_awk_infer-experiment_htseq-count_deseq2",
+    "name": "Differential gene expression analysis of single-end NGS data using FastQC, Trimmomatic, STAR, AWK, Infer Experiment, HTSeq-count, DESeq2",
     "version": 0,
     "steps": {
         "0": {

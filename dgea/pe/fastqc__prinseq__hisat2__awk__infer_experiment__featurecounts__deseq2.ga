@@ -2,7 +2,7 @@
     "uuid": "56c1fb23-5df2-494d-bf7f-a134f2c14385",
     "tags": [],
     "format-version": "0.1",
-    "name": "fastqc__prinseq__hisat2__awk__infer_experiment__featurecounts__deseq2",
+    "name": "Differential gene expression analysis of paired-end NGS data using FastQC, PRINSEQ, HISAT2, AWK, Infer Experiment, featureCounts, DESeq2",
     "version": 0,
     "steps": {
         "0": {
