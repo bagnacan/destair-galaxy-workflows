@@ -38,6 +38,8 @@ analyses.
 
 
 ### DGE analysis (single-end reads)
+- [FastQC, Cutadapt --> BWA --> AWK, Infer Experiment, featureCounts, DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__cutadapt__bwa__awk__infer_experiment__featurecounts__deseq2.ga)
+- [FastQC, Cutadapt --> BWA --> AWK, Infer Experiment, HTSeq-count, DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__cutadapt__bwa__awk__infer_experiment__htseq-count__deseq2.ga)
 - [FastQC, Trim Galore! --> BWA --> AWK, Infer Experiment, featureCounts, DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__bwa__awk__infer_experiment__featurecounts__deseq2.ga)
 - [FastQC, Trim Galore! --> BWA --> AWK, Infer Experiment, HTSeq-count, DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__bwa__awk__infer_experiment__htseq-count__deseq2.ga)
 - [FastQC, Trim Galore! --> HISAT2 --> AWK, Infer Experiment, featureCounts, DESeq2](https://raw.githubusercontent.com/destairdenbi/galaxy-workflows/master/dgea/se/fastqc__trim_galore__hisat2__awk__infer_experiment__featurecounts__deseq2.ga)
